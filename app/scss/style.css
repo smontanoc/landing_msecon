@@ -35,7 +35,7 @@ a, a:visited, a:hover {
 
 button, .button {
   padding: 0.5rem 1rem;
-  background: hsl(0deg, 100%, 37.6%);
+  background-color: hsl(0deg, 100%, 37.6%);
   border-color: hsl(0deg, 0%, 100%);
   border-width: 2px;
   border-radius: 4px;
@@ -68,19 +68,12 @@ button, .button {
 }
 
 .hero {
-  background-color: yellow;
   display: flex;
-  height: 500px;
-  justify-content: space-between;
-}
-.hero img {
-  margin-right: 0%;
-  float: right;
-  height: 500px;
-  width: 1px;
+  height: 400px;
+  background-color: hsl(47deg, 84.6%, 51.8%);
 }
 .hero__text {
-  height: 500px;
+  height: 400px;
   color: black;
   border: none;
   padding: 1px;
@@ -90,10 +83,7 @@ button, .button {
   margin-left: 2%;
 }
 
-.progdesc {
-  background-color: hsl(220deg, 16%, 96%);
-}
-.progdesc__text1 {
+.progdesc__text {
   color: black;
   width: 50%;
   margin-left: 2%;

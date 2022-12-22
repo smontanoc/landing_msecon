@@ -1,28 +1,17 @@
 
 .hero {
-    background-color: yellow;
     display: flex;
-    height: 500px;
-    justify-content: space-between;
- 
-    img {
-        margin-right: 0%;
-        float: right;
-        height: 500px;
-        width: 1px;
-      }
-
-
+    height: 400px;
+    background-color: $umdyellow;   
     &__text{
-        height: 500px;
+        height: 400px;
         color: black;
         border: none;
         padding: 1px;
         overflow: hidden;
         width: 100%;
         margin-top: 1%;
-        margin-left: 2%;
-            
+        margin-left: 2%;            
     }
 }
   
