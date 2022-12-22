@@ -1,0 +1,35 @@
+.header {
+    nav {
+        background-color: $myred;
+        padding: 24px;        
+    }
+
+    &__logo{
+        img{
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+        }
+    }
+
+    &__menu{ //Mobile menu
+        > span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $darkBlue;
+
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    &__links{
+        a {
+            font-size: $font-sm;
+            color: $grayishBlue;
+        }
+    }
+}
