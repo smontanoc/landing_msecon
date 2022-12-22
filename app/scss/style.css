@@ -73,7 +73,6 @@ button, .button {
   background-color: hsl(47deg, 84.6%, 51.8%);
 }
 .hero__text {
-  height: 400px;
   color: black;
   border: none;
   padding: 1px;

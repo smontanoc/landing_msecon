@@ -2,9 +2,9 @@
 .hero {
     display: flex;
     height: 400px;
-    background-color: $umdyellow;   
+    background-color: $umdyellow; 
+    
     &__text{
-        height: 400px;
         color: black;
         border: none;
         padding: 1px;
