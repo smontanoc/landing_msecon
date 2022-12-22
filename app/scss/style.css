@@ -45,7 +45,7 @@ button, .button {
 
 .header nav {
   background-color: hsl(358deg, 84%, 49%);
-  padding: 24px;
+  padding: 0.625rem 1.5rem;
 }
 .header__logo img {
   height: auto;
@@ -65,4 +65,36 @@ button, .button {
 .header__links a {
   font-size: 0.875rem;
   color: hsl(233deg, 8%, 62%);
+}
+
+.hero {
+  background-color: yellow;
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+}
+.hero img {
+  margin-right: 0%;
+  float: right;
+  height: 500px;
+  width: 1000px;
+}
+.hero__text {
+  height: 500px;
+  color: red;
+  border: none;
+  padding: 1px;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.progdesc {
+  background-color: hsl(220deg, 16%, 96%);
+}
+.progdesc__text1 {
+  color: black;
+  width: 50%;
+  margin-left: 2%;
 }/*# sourceMappingURL=style.css.map */
