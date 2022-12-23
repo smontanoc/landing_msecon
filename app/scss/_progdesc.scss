@@ -1,7 +1,16 @@
 .progdesc {
+    display: flex;
+    height: 200px;
+
     &__text{
         color: black;
-        width: 50%;
-        margin-left: 2%;
+        margin-top: 5%;
+        margin-left: 5%;
     }
+
+    img {
+        height: 150px;
+        width: 150px;
+    }
+
 }
