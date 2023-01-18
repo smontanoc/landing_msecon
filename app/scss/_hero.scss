@@ -1,17 +1,42 @@
 
 .hero {
-    display: flex;
-    height: 400px;
+    //height: 400px;
     background-color: $umdyellow; 
     
+    @include breakpoint-up(large) {
+        display: flex;
+    }
+
+    &__image{
+        //background-image: url('images/ms_picture.jpg');
+        background-image: url('images/students.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        min-height: 5rem;
+        @include breakpoint-up(large) {
+            flex: 1;
+            order: 2;
+        }
+        //border: 1px solid magenta;
+        //background-size: cover;
+        //height: 100%;
+        //width: 100%;
+    }
+
     &__text{
         color: black;
-        border: none;
         padding: 1px;
-        overflow: hidden;
-        width: 100%;
-        margin-top: 1%;
-        margin-left: 5%;            
+        background-color: $umdyellow;               
+        margin-left: 10%;
+        margin-right: 10%;
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+        //border: none;
+        //overflow: hidden;
+        //width: 100%;
+        //margin-top: 1%;
     }
 }
   

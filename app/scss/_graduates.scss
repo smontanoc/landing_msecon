@@ -1,0 +1,35 @@
+.graduates {    
+    @include breakpoint-up(large) {
+        display: flex;
+    }
+
+    &__image{
+        margin-left: 10%;
+        background-image: url('images/graduate_pic.jpg');
+        //background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        max-height: 15rem;
+        min-height: 20rem;
+        
+        @include breakpoint-up(large) {
+            flex: 1;
+            order: 1;
+        }
+    }
+
+    &__text{
+        color: black;
+        padding: 1px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 7%;
+
+        @include breakpoint-up(large) {
+            flex: 1;
+            order: 2;
+        }
+    }
+}
+  
+

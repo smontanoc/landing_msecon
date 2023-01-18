@@ -1,0 +1,23 @@
+.bottom{
+    background-color: black;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        margin-left: 10%;
+        //margin-right: 10%;
+      }
+  
+    &__column {
+        //padding: 16px;
+        //height: 250px;
+        //margin: 1.25rem;
+        //margin-left: 10%;
+        //flex-wrap: wrap;
+
+        color: white;
+        margin-top: 5%;
+        font-size: 0.8rem;
+        display: flex;
+      }
+}

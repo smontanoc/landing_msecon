@@ -35,7 +35,6 @@ a, a:visited, a:hover{
     &-ai-c {
         align-items: center;
     }
-
 }
 
 //Buttons
@@ -48,3 +47,18 @@ button, .button {
     cursor: pointer;
     color: $white;
 }
+
+// Visibility
+.hide-for-mobile {
+    //Hide for tablet and mobile
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+  
+  .hide-for-desktop {
+    //Hide for desktop viewport widths
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }

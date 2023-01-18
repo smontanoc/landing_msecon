@@ -8,49 +8,213 @@
   <link rel="stylesheet" href="app/scss/style.css">
 </head>
 <body>
-
+  
+  <!--
+  1. HEADER
+  -->
   <header class="header"> 
     <nav class="flex flex-jc-sb flex-ai-c">
       <a href="#" class="header__logo">
         <img src="images/logo.png" alt="EconDeptLogo" />
       </a>
-    
-    <button type="button">ASK QUESTIONS</button>
+
+      <!--
+      <div class="header__links hide-for-mobile">
+        <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a
+        ><a href="#">Blog</a><a href="#">Careers</a>
+      </div>    
+      -->
       
-    <button type="button">APPLY NOW</button>
+      <a href='https://masters.econ.umd.edu/contact-information.html' target="_blank">
+        <button type="button" >ASK QUESTIONS
+        </button>
+      </a>
+
+      <a href='https://terpengage.force.com/community/CustomLoginPage?GradApp=True' target="_blank">
+        <button type="button" >APPLY NOW
+        </button>
+      </a>      
     </nav>
   </header>
 
+  <!--
+  2. HERO
+  -->
   <section class="hero">
+    <div class="hero__image hide-for-mobile">
+      <!-- <img src="images/students.png" alt=""/> -->
+    </div>    
     <div class="hero__text">
       <h1 style="color:white">Contact Us</h1>
+      <form>
+        <div>
+          <label for="first_name"><a style="color:white">FIRST NAME</a></label>
+          <input type="text" id="first_name" placeholder="First Name" required>
+          <label for="last_name"><a style="color:white">LAST NAME</a></label>
+          <input type="text" id="last_name" placeholder="Last Name" required>  
+        </div>
+        <div>
+          <br></br>
+          <label for="email"><a style="color:white">EMAIL</a></label>
+          <input type="email" id="email" placeholder="email@example.com" required>  
+        </div>
+        <div>
+          <br></br>
+          <button type="submit" >SUBMIT</button>
+        </div>
+      </form>
+
+      <br></br>
       <h1>Master of Science in Applied Economics</h1>
     </div>
-    <img src="images/students.png" alt="" />
   </section>
 
+  <!--
+  3. WHY MAE AT UMD?
+  -->
   <section class = "progdesc">
     <div class="progdesc__text">
-      <p>
-      Our program combines rigorous training in economic analysis and applied econometrics, allowing our students to build strong quantitative and empirical skills highly demanded across industries. 
+      <h1>Why the MS in Applied Economics at Maryland?</h1>
+        <p>
+          Our program combines rigorous training in economic analysis and applied econometrics, allowing our students to build strong quantitative and empirical skills highly demanded across industries. 
+          <br></br>
+          View a <a href="https://masters.econ.umd.edu/informational-videos.html" target="_blank"><b><u>series of videos</u></b></a> describing admissions, curriculum, cost, placement outcomes, and other features of our program.
+          <br></br>
+        </p>
+    </div>
+    <div class="progdesc__grid">
+
+      <div class="progdesc__item">
+        <div class="progdesc__icon">
+          <img src="images/medal-solid.svg" alt="" />
+        </div>
+        <div class="progdesc__title">Ranked #1 by TFE Times</div>
+      </div>  
+      
+      <div class="progdesc__item">
+        <div class="progdesc__icon">
+          <img src="images/file-circle-check-solid.svg" alt="" />
+        </div>
+        <div class="progdesc__title">STEM-designated curriculum</div>
+      </div>
+
+      <div class="progdesc__item">
+        <div class="progdesc__icon">
+          <img src="images/file-invoice-dollar-solid.svg" alt="" />
+        </div>
+        <div class="progdesc__title">Tuition Lower than Similar Programs</div>
+      </div>  
+
+      <div class="progdesc__item">
+        <div class="progdesc__icon">
+          <img src="images/users-solid.svg" alt="" />
+        </div>
+        <div class="progdesc__title">Engaged Alumni Network</div>
+      </div>  
+
+      <div class="progdesc__item">
+        <div class="progdesc__icon">
+          <img src="images/calendar-days-solid.svg" alt="" />
+        </div>
+        <div class="progdesc__title">Duration 15 - 21 Months</div>
+      </div>  
+
+      <div class="progdesc__item">
+        <div class="progdesc__icon">
+          <img src="images/handshake-solid.svg" alt="" />
+        </div>
+        <div class="progdesc__title">Strong Placement Records</div>
+      </div>  
+
+    </div>
+  </section>
+
+  <!--
+  4. IMPORTANT FEATURES
+  -->
+  <section class="features">
+    <div class="features__text">
       <br></br>
-      You can view a series of short videos describing admissions, curriculum, cost, placement outcomes, and other features of our program.
-      </p>
-    </div>
-    <div>
-      <img src="images/medal.jpg" alt="" />
-      <img src="images/diploma.jpg" alt="" />      
-    </div>
-    <div>
-      <img src="images/tuition.jpg" alt="" />      
-      <img src="images/calendar.jpg" alt="" />        
-    </div>
+      <h1>Important Features</h1>
+        <p>
+          In-person evening classes in downtown Washington, DC, or on our main campus in College Park, Maryland (also less than 10 miles from the White House). 
+          <br></br>
+          Domestic students can begin in late February or late August.
+          <br></br>
+          International students needing an F1 visa sponsorship can begin on our main campus in late August. 
+        </p>
+    </div>    
   </section>
 
-  <section class="progfeatures">
-    
+  <!--
+  5. OUR GRADUATES
+  -->
+  <section class="graduates">
+    <div class="graduates__image">
+      <h1>Our Graduates</h1>
+    </div>    
+    <div class="graduates__text">
+      <p>
+      "Maryland's program was a great experience for me as I pursued the degree in order to change my career. I was able to take on a number of internships while taking courses in the evening at the DC campus. In my career since graduating from the program, I’ve used a lot of the skills that I learned in my classes."
+      <br></br>
+      <b>Jacqueline Lavalleye, MAE' 17</b> 
+      </p>      
+    </div> 
   </section>
 
+  <!--
+  6. MAP AND OTHER BUTTONS
+  -->
+  <section class="map">
+    <div class="map__content">
+      <div>
+        <div>
+          <button><u>Register for an Online<br>Information Session</br></u></button>
+          <br></br>
+        </div>
+        <div>
+          <button><u>Apply Now</u></button>
+          <br></br>
+        </div>   
+        <div>
+          <button><u>More Information</u></button>
+        </div>  
+      </div>
+      <div class="map__google">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90191.8837640285!2d-77.02234759057693!3d38.93940945372528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6bd3e9aaaab%3A0xd48e8bdda5e4da9a!2sUniversity%20of%20Maryland!5e0!3m2!1sen!2sus!4v1674075074980!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>  
+    </div>
+  </section>  
+
+  <!--
+  7. BOTTOM
+  -->
+  <section class="bottom">
+      <div class="bottom__container">
+        <div class="bottom__column">
+          <p>
+            Department of Economics<br>University of Maryland</br>College Park, MD, 20742
+            <br></br>
+            Master of Sciences<br>Program in Applied Economics</br>
+            <br>Dr. John Straub, Program Director</br>straub@umd.edu
+          </p>
+        </div>
+        <div class="bottom__column">
+          <p>
+            College Park Location<br>1102 Morrill Hall</br>
+            <br></br>
+            Program Coordinator:<br>Kaitlyn Walker</br><br>(301) 405-3557</br>CPmasters-econ@umd.edu
+          </p>
+        </div>
+        <div class="bottom__column">
+          <p>
+            Washington, DC Location<br>1400 16th Street, NW</br>
+            <br></br>
+            Program Coordinator:<br>Herman Byrd</br><br>(202) 525-4308</br>DCmasters-econ@umd.edu
+          </p>
+        </div>
+      </div>    
+  </section>  
 
   <script src="/app/js/script.js"></script>
   

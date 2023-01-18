@@ -43,9 +43,21 @@ button, .button {
   color: hsl(0deg, 0%, 100%);
 }
 
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 .header nav {
   background-color: hsl(0deg, 100%, 37.6%);
-  padding: 0.625rem 1.5rem;
+  padding: 1.5rem;
 }
 .header__logo img {
   height: auto;
@@ -68,30 +80,181 @@ button, .button {
 }
 
 .hero {
-  display: flex;
-  height: 400px;
   background-color: hsl(47deg, 84.6%, 51.8%);
+}
+@media (min-width: 64em) {
+  .hero {
+    display: flex;
+  }
+}
+.hero__image {
+  background-image: url("images/students.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 5rem;
+}
+@media (min-width: 64em) {
+  .hero__image {
+    flex: 1;
+    order: 2;
+  }
 }
 .hero__text {
   color: black;
-  border: none;
   padding: 1px;
-  overflow: hidden;
-  width: 100%;
-  margin-top: 1%;
-  margin-left: 5%;
+  background-color: hsl(47deg, 84.6%, 51.8%);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media (min-width: 64em) {
+  .hero__text {
+    flex: 1;
+  }
 }
 
 .progdesc {
-  display: flex;
-  height: 200px;
+  height: 350px;
 }
 .progdesc__text {
   color: black;
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 5%;
 }
 .progdesc img {
-  height: 150px;
-  width: 150px;
+  max-height: 50px;
+  max-width: 50px;
+  margin-left: 10%;
+}
+@media (min-width: 40em) {
+  .progdesc__grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.progdesc__item {
+  margin-left: 10%;
+}
+@media (min-width: 40em) {
+  .progdesc__item {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 64em) {
+  .progdesc__item {
+    flex: 1;
+  }
+}
+.progdesc__icon {
+  max-height: 50px;
+  max-width: 50px;
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 64em) {
+  .progdesc__icon {
+    margin-bottom: 1rem;
+  }
+}
+.progdesc__title {
+  font-size: 1.25rem;
+  font-weight: 100;
+  line-height: 1.15;
+  color: black;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media (min-width: 64em) {
+  .progdesc__title {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.features {
+  height: 350px;
+  background-color: hsl(220deg, 16%, 96%);
+}
+.features__text {
+  color: black;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+@media (min-width: 64em) {
+  .graduates {
+    display: flex;
+  }
+}
+.graduates__image {
+  margin-left: 10%;
+  background-image: url("images/graduate_pic.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  max-height: 15rem;
+  min-height: 20rem;
+}
+@media (min-width: 64em) {
+  .graduates__image {
+    flex: 1;
+    order: 1;
+  }
+}
+.graduates__text {
+  color: black;
+  padding: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 7%;
+}
+@media (min-width: 64em) {
+  .graduates__text {
+    flex: 1;
+    order: 2;
+  }
+}
+
+.map {
+  height: 350px;
+  background-color: hsl(220deg, 16%, 96%);
+}
+.map button, .map .button {
+  background-color: hsl(0deg, 100%, 37.6%);
+  border-color: hsl(0deg, 0%, 100%);
+  border-width: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+  margin-left: 10%;
+  margin-top: 5%;
+  padding: 25px 20px;
+}
+.map__content {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  margin-left: 10%;
+}
+.map__google {
+  margin-top: 5%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  background-color: black;
+}
+.bottom__container {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  margin-left: 10%;
+}
+.bottom__column {
+  color: white;
+  margin-top: 5%;
+  font-size: 0.8rem;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

@@ -1,16 +1,70 @@
 .progdesc {
-    display: flex;
-    height: 200px;
+    //display: flex;
+    height: 350px;
 
     &__text{
         color: black;
-        margin-top: 5%;
-        margin-left: 5%;
+        margin-top: 1%;
+        margin-left: 10%;
+        margin-right: 5%;
     }
 
-    img {
-        height: 150px;
-        width: 150px;
+    img{
+        max-height: 50px;
+        max-width: 50px;
+        margin-left: 10%;            
     }
+
+
+    &__grid {
+
+        @include breakpoint-up(medium){
+          display: flex;
+          flex-wrap: wrap;     
+        }
+      }
+
+    &__item {
+        margin-left: 10%;
+        //padding: 0.9375rem;
+    
+        @include breakpoint-up(medium){
+          flex: 0 0 50%;
+        }
+    
+        @include breakpoint-up(large){
+          flex: 1;
+        }
+      }
+
+    &__icon {
+        max-height: 50px;
+        max-width: 50px;
+        //margin-left: 10%;        
+        //margin-right: 10%;        
+        margin-bottom: 1.875rem;
+
+        @include breakpoint-up(large){
+          margin-bottom: 1rem;
+        }           
+    }
+
+    &__title{
+        font-size: 1.25rem;
+        font-weight: 100;
+        line-height: 1.15;
+        color: black;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        //text-align: center;
+    
+        @include breakpoint-up(large){
+          font-size: 0.75rem;
+          margin-bottom: 1.5rem;
+        }
+    }
+
+
 
 }
