@@ -46,7 +46,16 @@
     </div>    
     <div class="hero__text">
       <h1 style="color:white">Contact Us</h1>
+      <!--
+        Source:
+        https://github.com/levinunnink/html-form-to-google-sheet
+      -->
       <form method="POST" action="https://script.google.com/macros/s/AKfycbyZG3YDuyzaYkMAQ3TbNkCsMqTEGcioGz3EJ5BurO5Rjf4JdeClSiaA0pVs-bcVESuT/exec">
+        <input name="Email" type="email" placeholder="Email" required>
+        <input name="Name" type="text" placeholder="Name" required>
+        <button type="submit">Send</button>
+        
+        <!--
         <div>
           <label for="first_name"><a style="color:white">FIRST NAME</a></label>
           <input type="text" id="first_name" placeholder="First Name" required>
@@ -63,6 +72,7 @@
           <br></br>
           <button type="submit" >SUBMIT</button>
         </div>
+        -->
       </form>
 
       <br></br>
